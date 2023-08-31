@@ -1,7 +1,50 @@
+:root{
+  background:purple
+}
+
+
+
 html {
   max-width: 720px;
+
+  background:blue
 }
 
 body {
   background: #fff;
+}
+
+*{
+  color:red
+}
+p,h2{
+  color:green
+}
+.card{
+  background-color:rgb(220, 233, 233)
+}
+#user{
+  background: yellow
+}
+.box > h2{
+  color:red;
+  background:bisque
+}
+li:first-child{
+  color:rgb(20, 221, 120)
+}
+li:last-child{
+  color:pink
+}
+li:only-child{
+  color: blue
+}
+.input-dark{
+  background:rgb(228, 15, 15)
+}
+.input-dark-required{
+  background:rgb(226, 144, 20)
+}
+.input-dark[type='text']{
+  color:black
 }

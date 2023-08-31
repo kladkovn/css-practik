@@ -1,0 +1,57 @@
+<div class="page">
+    <div class="page_content">
+        <div class="row ">
+            {{!-- <div class="card">
+                <h1 class="text-center">{{page.title}}</h1>
+            </div> --}}
+            <div class="page_block">
+            <header class="header row">
+                <div class="col-3">
+                   {{> logo}}
+                </div>
+                <div class="header_nav col-9">
+                    <div class="header_nav_right">
+                        {{> nav list=header}}
+                    </div>
+                </div>
+            </header>
+            {{> divider}}
+            </div>
+            <div class="page_block">
+                {{> hero data=hero}}
+            </div>
+            <div class="page_block">
+                <main class="row">
+                    {{#each plans}}
+                    <div class="plans_card col">
+                        <div class="card_header">{{name}}</div>
+                        <div class="card_body">
+                            <div class="price">${{price}}<span class="price_add">/mo</span></div>
+                            <div class="features">{{#each features}} <p class="features_item">{{this}}</p>{{/each}}</div>
+                            <button class="btn {{#if @first}} btn-outline-primary {{else}} btn-primary {{/if}} card_button">{{button}}</button>
+                        </div>
+                    </div>
+                    {{/each}}
+                </main>
+            </div>
+            
+
+            <div class="page_block">
+            {{> divider}}
+            <footer class="footer row">
+                <div class="col-3">
+                    {{> logo}}
+                    <em class="footer_copyright">Copyright 2023</em>
+                </div>
+                {{#each footer}}
+                <div class="col-3">
+                    <p class="footer_title">{{title}}</p>
+                    {{>nav list=links isVertical=true}}
+                </div>
+                    
+                {{/each}}
+            </footer>
+            </div>
+        </div>
+    </div>
+</div>
