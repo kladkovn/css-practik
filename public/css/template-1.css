@@ -127,4 +127,14 @@
     width: 100%;
     font-size: 19px;
     padding: 9px;
+    border-radius: 25px;
+}
+.plans_card:nth-child(2)>.card{
+    background-color: blue;
+}
+p{
+    background-color: grey;
+    width: 200px;
+    height: 100px;
+    text-overflow: ellipsis;
 }

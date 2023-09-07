@@ -22,16 +22,9 @@
             </div>
             <div class="page_block">
                 <main class="row">
-                    {{#each plans}}
-                    <div class="plans_card col">
-                        <div class="card_header">{{name}}</div>
-                        <div class="card_body">
-                            <div class="price">${{price}}<span class="price_add">/mo</span></div>
-                            <div class="features">{{#each features}} <p class="features_item">{{this}}</p>{{/each}}</div>
-                            <button class="btn {{#if @first}} btn-outline-primary {{else}} btn-primary {{/if}} card_button">{{button}}</button>
-                        </div>
-                    </div>
-                    {{/each}}
+                   
+                        {{>  card}}
+                    
                 </main>
             </div>
             
@@ -45,7 +38,7 @@
                 </div>
                 {{#each footer}}
                 <div class="col-3">
-                    <p class="footer_title">{{title}}</p>
+                    <span class="footer_title">{{title}}</span>
                     {{>nav list=links isVertical=true}}
                 </div>
                     

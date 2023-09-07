@@ -1,0 +1,12 @@
+{{#each plans}}
+<div class="plans_card col">
+    <div class="card">
+        <div class="card_header">{{name}}</div>
+        <div class="card_body">
+            <div class="price">${{price}}<span class="price_add">/mo</span></div>
+            <div class="features">{{#each features}} <p class="features_item">{{this}}</p>{{/each}}</div>
+            <button class="btn {{#if @first}} btn-outline-primary {{else}} btn-primary {{/if}} card_button">{{button}}</button>
+        </div>
+    </div>
+</div>
+{{/each}}
