@@ -18,7 +18,10 @@
             {{> divider}}
             </div>
             <div class="page_block">
-                {{> hero data=hero}}
+                <div class="hero">
+                    {{> hero data=hero}}
+                </div>
+                
             </div>
             <div class="page_block">
                 <main class="row">
@@ -27,7 +30,23 @@
                     
                 </main>
             </div>
-            
+            <div class="page_block">
+                <div>
+                    
+                    <table class="table">
+                        <tbody>
+                            {{#each footer}}
+                            <tr>
+                                {{#each links}}
+                                <td>{{text}}</td>
+                                {{/each}}
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                    <caption>My table grow</caption>
+                </div>
+            </div>
 
             <div class="page_block">
             {{> divider}}

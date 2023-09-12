@@ -1,10 +1,10 @@
-:root{
+/* :root{
   background:purple
-}
+} */
 
 
 
-html {
+/* html {
   max-width: 720px;
 
   background:blue
@@ -47,4 +47,21 @@ li:only-child{
 }
 .input-dark[type='text']{
   color:black
+} */
+
+.page{
+  background-image: url('/img/Landscape-Color.jpg');
+  background-repeat: no-repeat;
+}
+
+.backgro{
+  background-image: url('/img/Minions-Download-PNG-Image.png');
+  width: 1000px;
+  padding: 80px;
+  margin: auto;
+  
+}
+.card-box{
+  height: 200px;
+  /* background-image: url('/public/img/Minions-Download-PNG-Image.png'); */
 }

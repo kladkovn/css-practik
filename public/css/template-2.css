@@ -223,3 +223,6 @@
 .main{
     padding-bottom: 40px;
 }
+.flex_container{
+    display:flex;
+}
