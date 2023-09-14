@@ -1,0 +1,59 @@
+
+<header class="header">
+    <div>
+        {{> logo}}
+    </div>
+    <div>
+        {{> nav list=header}}
+    </div>
+    
+</header>
+{{> divider}}
+<div class="main">
+    {{#with main}}
+    <div class="main_content">
+        <h2 class="main_title">{{heading}}</h2>
+        <p class="main_text">{{description}}</p>
+        <a href={{href}} class="main_button">{{button}}</a>
+    </div>
+    <div class="main_img">
+        <img src={{image}} alt="main-photo">
+    </div>
+    {{/with}}
+</div>
+<div class="card">
+    {{#each featured}}
+    <div class="card_content">
+        <div class="card_img" style="background-image: url({{photo}});"></div>
+    
+        <h3 class="card_title">{{heading}}</h3>
+        <p class="card_info">{{info}}</p>
+        <a href={{linkUrl}} class="card_button">{{linkText}}</a>
+    </div>
+    {{/each}}
+</div>
+<div class="form">
+    {{#each actions}}
+    <div class="form_content">
+        <label for="formContent" class="form-label">{{heading}}</label>
+        <input type="text" class="form-control" placeholder={{text}}>
+    </div>
+    {{/each}}
+</div>
+{{> divider}}
+<footer class="footer">
+    <div>
+        {{> logo}}
+        <em class="footer_copyright">Copyright 2023</em>
+    </div>
+    {{#each footer}}
+    <div>
+        <span class="footer_title">{{title}}</span>
+        {{>nav list=links isVertical=true}}
+    </div>
+        
+    {{/each}}
+</footer>
+
+
+    

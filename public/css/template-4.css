@@ -1,0 +1,163 @@
+.root{
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+
+    --space-s: 12px;
+    --space-l: 24px;
+
+    --border-color: #36383a;
+
+
+}
+
+
+
+/* *********************** */
+.page{
+    background-color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.page_content{
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 0;
+}
+
+/* ******************** */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+.logo{
+    font-size: 18px;
+}
+.divider{
+    margin: 0;
+    height: 1px;
+    background-color:rgb(56, 56, 56);
+}
+.nav{
+    display: flex;
+}
+.nav_inline{
+    gap: 24px;
+}
+.nav_vertical{
+    gap: 12px;
+    flex-direction: column;
+}
+.nav_link{
+    color:#343A40;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav_link:hover{
+    text-decoration: underline;
+    color:blue
+}
+
+
+.footer_copyright{
+    font-size: 13px;
+    color:#6C757D;
+    display: block;
+    margin-top: 12px;
+}
+.footer_title{
+    font-size: 20px;
+    color:#212529;
+    display: block;
+    margin-bottom: 12px;
+
+}
+.main{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 12px;
+}
+.main_content{
+    display: block;
+   
+    gap: 24px;
+}
+.main_title{
+    font-size: 36px;
+    font-weight: 500;
+    color: #5A5A5A;
+    margin-bottom: 24px;
+}
+.main_text{
+    font-size: 16px;
+    color: #5A5A5A;
+    margin-bottom: 24px;
+}
+.main_button{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #6C757D;
+    padding: 12px 16px;
+    text-align: center;
+    border-radius: 4px;
+}
+.main_img{
+    border-radius: 12px;
+    width: 500px;
+    height: 500px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+}
+.card_img{
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    margin-left: 26px;
+}
+.card_content{
+    width: 330px;
+    margin-bottom: 26px;
+    padding: 24px;
+}
+.card_button{
+    color: #0D6EFD;
+    font-size: 16px;
+    
+}
+.card_button:hover{
+    color: blue;
+}
+.form{
+    background-color: #563D7C;
+    display: flex;
+    justify-content: space-evenly;
+    height: 130px;
+    border-radius: 8px;
+    
+}
+.form_content{
+    color: #fff;
+    font-size: 24px;
+    
+}
+
+
+
