@@ -31,10 +31,13 @@
 /* ******************** */
 
 .header{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 24px;
-    
+    width: 960px;
+    z-index: 1;
+    background-color: #fff;
 }
 .footer{
     display: flex;
@@ -173,6 +176,45 @@
 }
 .form_button:hover{
     background-color: #9e89ec;;
+}
+.hero_slider_icon{
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #fff;
+}
+.hero_slider_icon:hover{
+    opacity: 0.6;
+    cursor:pointer;
+}
+.hero_slider{
+    position: relative;
+}
+.hero_slider_left{
+   left:16px; 
+   top: 250px;
+}
+.hero_slider_right{
+    right:16px; 
+    top: 252px;
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    color:#fff;
+    padding: 24px;
+    border-radius: 16px;
+    z-index: 2;
 }
 
 

@@ -7,16 +7,25 @@
         {{> nav list=header}}
     </div>
 </header>
-{{> divider}}
+{{!-- {{> divider}} --}}
+
+<div class="modal">
+    {{hero.text}}
+</div>
 
 <div class="hero">
     <div>
         <h1 class="hero_title">{{hero.title}}</h1>
         <p class="hero_text">{{hero.text}}</p>
     </div>
-    <div>
+    
+    <div class="hero_slider">
+        <div class="hero_slider_icon hero_slider_left">{{hero.left}}</div>
         <img class="hero_img" src={{hero.photo}} alt="photo">
+        <div class="hero_slider_icon hero_slider_right">{{hero.right}}</div>
     </div>
+        
+    
 </div>
 
 <main class="blog">
