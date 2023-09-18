@@ -1,0 +1,230 @@
+.root{
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+
+    --space-s: 12px;
+    --space-l: 24px;
+
+   
+    --title-color: #212529;
+    --text-color: #767676;
+    --button-color: #007BFF;
+    --bg-color: #FFFFFF;
+    --border-color: #D3DEE9;
+
+
+}
+
+
+
+/* *********************** */
+.page{
+    background-color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.page_content{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 0;
+}
+
+/* ******************** */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border-bottom: 1px solid black;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border-top:1px solid black ;
+}
+.logo{
+    font-size: 18px;
+}
+.divider{
+   
+    height: 1px;
+    background-color:rgb(56, 56, 56);
+}
+.nav{
+    display: flex;
+}
+.nav_inline{
+    gap: 24px;
+}
+.nav_vertical{
+    gap: 12px;
+    flex-direction: column;
+}
+.nav_link{
+    color:#343A40;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav_link:hover{
+    text-decoration: underline;
+    color:blue
+}
+
+
+.footer_copyright{
+    font-size: 13px;
+    color:#6C757D;
+    display: block;
+    margin-top: 12px;
+}
+.footer_title{
+    font-size: 20px;
+    color:#212529;
+    display: block;
+    margin-bottom: 12px;
+
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row-reverse ;
+    gap: 40px;
+    width: 100%;
+    align-items:flex-start;
+}
+.messages{
+    width: 620px;
+    gap: 24px;
+    border-radius: 12px;
+    border: 1px solid #D3DEE9;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0px 4px 17px 0px #0000001A;
+    display: flex;
+    flex-direction: column;
+}
+.messages_title{
+    font-size: 24px;
+    color: var(--title-color);
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D3DEE9;
+}
+.messages_name{
+    font-size: 16;
+    font-weight: 500;
+    color:var(--title-color);
+}
+.messages_message{
+    font-size: 16px;
+    color: var(--text-color);
+}
+.messages_day{
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+}
+.messages_list{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    border-bottom: 1px solid #D3DEE9;;
+}
+.messages_link{
+    font-size: 14px;
+    align-self: flex-end;
+    transition: opacity 0.7s;
+}
+.messages_link:hover{
+    opacity: 0.7;
+}
+.form{
+    width: 340px;
+    border: 1px solid #D3DEE9;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+.form_title{
+    font-size: 24px;
+    color: var(--title-color);
+    text-align: center;
+}
+.form_input_list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.form_input{
+    border: 1px solid #D3DEE9;
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 16px;
+    color:#212529;
+}
+.form_input:placeholder{
+    color: #212529;
+}
+.form_check{
+    display: flex;
+    gap: 8px;
+    align-items:center;
+    
+}
+.form_check > input{
+    border: 1px solid #767676;
+}
+.form_check > label{
+    font-size: 16px;
+    color:#212529;
+    cursor: pointer;
+}
+.form_button{
+    width: 100%;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 8px 119px 8px 119px;
+    border-radius: 4px;
+    transition: opacity 0.7s;
+}
+.form_button:hover{
+    opacity: 0.7;
+}
+.form_info{
+    text-align: center;
+    font-size: 16px;
+}
+.advantages_block{
+    display: flex;
+    gap: 24px;
+
+}
+.advantages{
+    width: 100%;
+    padding: 22px;
+    border: 1px solid #D3DEE9;
+    border-radius: 12px;
+    box-shadow: 0px 4px 17px 0px #0000001A;
+    gap: 8px;
+}
+.advanrages_title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 9px;
+    color:#212529;
+}
+.advantages_text{
+    font-size: 16px;
+    color: var(--text-color);
+}
