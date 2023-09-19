@@ -1,0 +1,81 @@
+
+<header class="header">
+    <div>
+        {{> logo}}
+    </div>
+    <div>
+        {{> nav list=header}}
+    </div>
+    
+</header>
+<div class="info_form">
+    {{#with info}}
+    <div class="info">
+        <h1 class="info_title">{{title}}</h1>
+        <p class="info_text">{{description}}</p>
+    </div>
+    {{/with}}
+    <div class="form">
+        {{#with form}}
+        {{#each inputs}}
+        <div class="form_input">
+            <input type="{{type}}" name="{{name}}" placeholder="{{placeholder}}" id="{{id}}">
+        </div>
+        {{/each}}
+        <div class="form_check">
+            <input class="form_check-input" type="checkbox" name="{{checkbox.name}}">
+            <label class="form_check_label" for="{{checkbox.name}}">{{checkbox.label}}</label>
+        </div>
+        <button type="submit" class="form_button">{{button}}</button>
+        <hr>
+        <p class="text_info">{{info}}</p>
+        {{/with}}
+    </div>
+</div>
+<div class="updates">
+    {{#with updates}}
+    <h1 class="updates_title">{{title}}</h1>
+    <hr>
+    {{#each list}}
+    <div class="list">
+        <img src="https://picsum.photos/35/35" alt="">
+        <strong class="nick">{{nickname}}</strong>
+        <p class="description">{{description}}</p>
+        <hr>
+    </div>
+    {{/each}}
+    {{#with show_all}}
+    <a href="{{url}}" class="upd_link">{{text}}</a>
+    {{/with}}
+    {{/with}}
+</div>
+<div class="expirience_block">
+    {{#with expirience}}
+    <h2 class="exp_title">{{title}}</h2>
+    <span class="badge_exp rounded-pill">{{badge}}</span>
+    <div class="list_block">
+        {{#each list}}
+        <div class="exp_list">
+        <strong class="list_name">{{name}}</strong>
+        <p class="list_details">{{details}}</p>
+        </div>
+        {{/each}}
+    </div>
+    {{/with}}
+</div>
+<footer class="footer">
+    <div>
+        {{> logo}}
+        <em class="footer_copyright">Copyright 2023</em>
+    </div>
+    {{#each footer}}
+    <div>
+        <span class="footer_title">{{title}}</span>
+        {{>nav list=links isVertical=true}}
+    </div>
+        
+    {{/each}}
+</footer>
+
+
+    
