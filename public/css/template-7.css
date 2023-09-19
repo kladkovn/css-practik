@@ -1,0 +1,255 @@
+.root{
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+    --size-h2:24px;
+    --size-h1:36px;
+
+    --space-s: 12px;
+    --space-l: 24px;
+
+   
+    --title-color: #FFFFFF;
+    --text-color:  #9CA3AF;
+    --button-color: #885FFB;
+  
+
+
+}
+
+
+
+/* *********************** */
+.page{
+    background-color:#111827;
+    max-width: 1920px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.page_content{
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 0;
+}
+
+/* ******************** */
+.header{
+    display: flex;
+    flex-direction: column;
+    
+}
+.logo_nav_block{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #bebcbc;
+    padding: 12px 0px 12px 0px;
+}
+.ad_us_block{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px 0px 0px;
+}
+.badge_logo{
+    background-color: #885FFB;
+    color: #FFFFFF;
+    padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+}
+.nav_block{
+    display: flex;
+    gap: 24px;
+}
+.nav_item > a{
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.nav_item:hover{
+    opacity: 0.6;
+    color: aqua;
+    
+}
+.ad_block{
+    display: flex;
+    gap: 10px;
+    
+}
+.badge_ad{
+    background-color: #885FFB;
+    width: 30px;
+    height: 18px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+.ad_text{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.ad_block > a{
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.ad_block > a:hover{
+    opacity: 0.6;
+    color: aqua;
+}
+.usOnline_block{
+    display: flex;
+}
+.usOnline_text{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.usOnline_block > em{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.hero_block{
+    background: radial-gradient(100% 625% at 100% 100%, rgba(17, 24, 39, 0) 0%, rgba(78, 63, 146, 0.6) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    width: 100%;
+    border-radius: 24px;
+    padding: 32px;
+    gap: 20px;
+    box-shadow: radial-gradient(100% 625% at 100% 100%, rgba(17, 24, 39, 0) 0%, rgba(78, 63, 146, 0.6) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero_title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.hero_text{
+    font-size: 16px;
+    color: #9CA3AF;
+}
+.hero_block > button{
+    background-color: #885FFB;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 12px 119px 12px 119px;
+    gap: 12px;
+}
+.hero_block > button:hover{
+    opacity: 0.6;
+    color: aqua;
+}
+.about_block{
+    width: 100%;
+    border-radius: 24px;
+    background: #2A314170;
+    padding: 32px;
+    gap: 16px;
+}
+.about_title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.about_text{
+    font-size: 14px;
+    color: #9CA3AF;
+}
+.articles_head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title_head{
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.articles_head >button{
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius:10px;
+    border: 1px solid #9CA3AF;
+    padding: 12px 20px 12px 20px;
+}
+.articles_head > button:hover{
+    opacity: 0.6;
+    color: aqua;
+    cursor: pointer;
+}
+.articles_card{
+    display: flex;
+    gap: 16px;
+    /* border-bottom:1px solid #bebcbc; */
+    
+}
+.card{
+    flex-grow: 4;
+    background-color: #111827;
+    gap: 16px;
+    position: relative;
+}
+.card_img{
+    height: 200px;
+    border-radius: 24px;
+}
+.card_name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.card_text{
+    font-size: 14px;
+    color: #9CA3AF;
+}
+.card_body > button{
+    background-color: #885FFB;
+    color: #FFFFFF;
+    padding: 8px 16px 8px 16px;
+    gap: 8px;
+    border-radius: 10px;
+}
+.card_body > button:hover{
+    opacity: 0.6;
+    color: aqua;
+}
+.badge_card{
+    background: #FB5F5F80;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 2px 6px 2px 6px;
+    position: absolute; top:150px; right: 20px;
+}
+.footer{
+    width: 100%;
+    padding: 0px 0px  32px 0px;
+    gap: 10px;
+}
+.footer_block{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.copy_text{
+    font-size: 16px;
+    color: #9CA3AF;
+}
+.link_block > a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9CA3AF;
+    text-decoration: none; 
+    gap:16px;
+}
+.link_block > a:hover{
+    opacity: 0.6;
+    color: aqua;
+}
