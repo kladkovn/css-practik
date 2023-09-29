@@ -43,7 +43,7 @@ body{
 
     --transition-1: 0.7s;
 }
-
+@layer adaptive{
 @media all and (1260px <= width) {
     .page_content {
         max-width: var(--page-width-big);
@@ -77,6 +77,7 @@ body{
         grid-template-columns: 1fr;
 
     }
+}
 }  
 @layer variant {
  
@@ -340,11 +341,17 @@ body{
 }
 .exp_card_body{
     padding: var(--spacing-3);
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.exp_text{
     gap: var(--spacing-8);
     display: flex;
     flex-direction: column;
-    justify-items: end ;
-    
+    justify-content: space-between ;
 }
 .exp_card_title{
     font-size: var(--size-3);

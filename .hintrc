@@ -8,7 +8,8 @@
       {
         "ignore": [
           "width: fit-content",
-          "rotate"
+          "rotate",
+          "-webkit-text-size-adjust"
         ]
       }
     ]
@@ -20,6 +21,8 @@
     "not chrome <= 114",
     "not edge <= 114",
     "not opera <= 99",
-    "not samsung <= 21"
+    "not samsung <= 21",
+    "not ios_saf <= 16.5",
+    "not safari <= 16.5"
   ]
 }
