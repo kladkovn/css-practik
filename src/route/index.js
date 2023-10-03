@@ -24,7 +24,15 @@ router.get('/slack', function (req, res) {
   })
   //                  ↑↑ сюди вводимо JSON дані
 })
+router.get('/dash', function (req, res) {
+  // res.render генерує нам HTML сторінку
 
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('dash', {
+    layout: null,
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
 router.get('/template-1', function (req, res) {
   // res.render генерує нам HTML сторінку
 
